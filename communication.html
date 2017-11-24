@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <title>Comunicación</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Sockets</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="communication.html">Comunicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="examples.html">Ejemplos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Comunicación</h1>
+            <p>Los sockets son la base de los protocolos de internet, pero también los podemos utilizar para sacarle provecho, es decir mediante sockets podemos hacer que dos aplicaciones se comuniquen entre si.</p>            
+        </div>
+    </section>
+
+    <section class="information jumbotron hey">
+        <article id="introduction">
+            <img src="images/communication1.png" class="rounded float-right" alt="Responsive image">
+            <h2>¿Cómo es la comunicación?</h2>
+            <p>Hacer que 2 aplicaciones se comuniquen entre si? Para entender esto primero debes saber como se efectua una comunicación humana.</p>
+            <ul>
+                <li>El que habla</li>
+                <li>El que escucha</li>
+                <li>Por donde pasan los datos</li>
+                <li>El tema de conversación</li>
+            </ul>
+
+            <p>En una comunicación humana, todos los humanos estamos escuchando, cuando alguien nos habla entonces empezamos una comunicación y de la comunicación hay un lugar por donde pasa el sonido, espero me entiendan.</p>
+        </article>
+    </section>
+
+    <section class="container-fluid">
+        <article>
+            <img src="images/phone.png" class="rounded float-right" alt="Responsive image">    
+            <h2>¿Cómo se comunican las aplicaciones?</h2>
+                <ul>
+                    <li>Servidor (el que escucha). El servidor siempre escucha por un puerto (por donde pasan los datos) lo que el cliente diga y si tiene respuesta, entonces responde.</li>
+                    <li>Cliente (el que habla). Normalmente el cliente se conecta al servidor por el puerto y le empieza a enviar peticiones y esperando respuestas.</li>
+                    <li>Por donde pasan los datos, realmente es por un puerto de entrada para el servidor y un puerto de salida para el cliente.El tema de conversación (protocolo), para que halla comunicación entre las 2 aplicaciones, estas deben estar programadas para responderse entre si, lo cual se denomina protocolo.</li>
+                </ul>
+            </article>
+    </section>
+
+    <section class="jumbotron">
+        <article>
+                <h2>De manera más simple</h2>
+                <ul>
+                    <li>Servidor: Aplicación que esta a la espera de que se conecte el cliente.</li>
+                    <li>Cliente: Aplicación que se conecta al servidor.</li>
+                    <li>Cliente/Servidor: Aplicación que es cliente y servidor al mismo tiempo, ejemplo una aplicación de chat, la cual puede enviar mensaje a otras aplicaciones y al mismo tiempo esta a la espera de que otras aplicaciones le envíen mensajes.</li>
+                </ul>
+            </article>
+    
+            <article>
+                <img src="images/socket.png" class="rounded float-right" alt="Responsive image">
+                <h2>Tipo de conexiones</h2>
+                <ul>
+                    <li>Remota: cuando las aplicaciones están en diferentes computadoras,la aplicación cliente se conecta la dirección IP y puerto del servidor.</li>
+                    <li>Local: cuando las 2 aplicaciones están en la misma computadora, se usa la dirección IP de LOOPBACK la cual es LOCALHOST  o 127.0.0.1.</li>
+                </ul>
+            </article>
+    </section>
+
+    <footer class="card text-center">
+        <h3 class="justify-content-center">Integrantes</h2>
+        <ul class="d-inline-flex justify-content-center">
+            <li class="list-group-item">Kevin Gamboa</li>
+            <li class="list-group-item">William Cervera</li>
+            <li class="list-group-item">Marco Chavez</li>
+        </ul>
+        <div class="card-footer">
+            ¡Hasta la próxima amigos!
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
